@@ -107,10 +107,12 @@ irc.overthewire.org.
 
 ```
 bandit1@bandit:~$ ls 
-
 - 
 
 bandit1@bandit:~$ cat ./- 
-
 CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+
+bandit1@bandit:~$ exit
+logout
+Connection to bandit.labs.overthewire.org closed.
 ```
