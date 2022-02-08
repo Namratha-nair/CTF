@@ -137,7 +137,7 @@ bandit5@bandit:~$ file ./inhere/*
 ./inhere/maybehere18: directory
 ./inhere/maybehere19: directory
 
-bandit5@bandit:~$ find . -type f -readable ! -executable -size 1033c              <!-- . or ./ refers current working directory -->
+bandit5@bandit:~$ find . -type f -readable ! -executable -size 1033c            
 ./inhere/maybehere07/.file2
 
 bandit5@bandit:~$ cat ./inhere/maybehere07/.file2
@@ -147,5 +147,10 @@ bandit5@bandit:~$ exit
 logout
 Connection to bandit.labs.overthewire.org closed.
 ```
+[//]: # (. OR ./         -> Refer to the Current Working Directory.)
+[//]: # (-type f         -> File is of type : regular file)
+[//]: # (-readable       -> Matches files which are readable.)
+[//]: # (-executable     -> Matches  files which are executable & directories which are searchable)
+[//]: # (! -executable   -> Matches  files which are not executable & directories which are not searchable)
+[//]: # (-size 1033c     -> File uses 1033 units of space. `c` refer to bytes.)
 
-<!-- . or ./ refers current working directory -->
