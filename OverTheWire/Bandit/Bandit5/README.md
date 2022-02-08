@@ -147,7 +147,7 @@ bandit5@bandit:~$ exit
 logout
 Connection to bandit.labs.overthewire.org closed.
 ```
-#### Command-Line Help-Text
+#### Command-line help text
 > . or ./         -> Refer to the Current Working Directory. <br/>
 > -type f         -> File is of type : regular file   <br/>
 > -readable       -> Matches files which are readable. <br/>
