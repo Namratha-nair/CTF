@@ -137,7 +137,7 @@ bandit5@bandit:~$ file ./inhere/*
 ./inhere/maybehere18: directory
 ./inhere/maybehere19: directory
 
-bandit5@bandit:~$ find . -type f -readable ! -executable -size 1033c
+bandit5@bandit:~$ find . -type f -readable ! -executable -size 1033c              <!-- . or ./ refers current working directory -->
 ./inhere/maybehere07/.file2
 
 bandit5@bandit:~$ cat ./inhere/maybehere07/.file2
@@ -147,3 +147,5 @@ bandit5@bandit:~$ exit
 logout
 Connection to bandit.labs.overthewire.org closed.
 ```
+
+<!-- . or ./ refers current working directory -->
