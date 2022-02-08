@@ -22,7 +22,7 @@ bandit0@bandit.labs.overthewire.org's password: bandit0
 ```
 
 Linux bandit.otw.local 5.4.8 x86_64 GNU/Linux
-
+```
       ,----..            ,----,          .---.
      /   /   \         ,/   .`|         /. ./|
     /   .     :      ,`   .'  :     .--'.  ' ;
@@ -37,7 +37,7 @@ Linux bandit.otw.local 5.4.8 x86_64 GNU/Linux
      \   \ .'        ;   |.'       \   \ ;
   www. `---` ver     '---' he       '---" ire.org
 
-`
+```
 Welcome to OverTheWire!
 
 If you find any problems, please report them to Steven or morla on
