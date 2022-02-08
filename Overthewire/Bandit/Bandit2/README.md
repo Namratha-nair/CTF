@@ -15,7 +15,10 @@ ls, cd, cat, file, du, find
 
 This is a OverTheWire game server. More information on http://www.overthewire.org/wargames
 
-bandit2@bandit.labs.overthewire.org's password: 
+```
+bandit2@bandit.labs.overthewire.org's password: CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+```
+
 Linux bandit.otw.local 5.4.8 x86_64 GNU/Linux
 
       ,----..            ,----,          .---.
