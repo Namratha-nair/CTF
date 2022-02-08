@@ -153,5 +153,5 @@ Connection to bandit.labs.overthewire.org closed.
 > -readable       -> Matches files which are readable. <br/>
 > -executable     -> Matches  files which are executable & directories which are searchable <br/>
 > ! -executable   -> Matches  files which are not executable & directories which are not searchable <br/>
-> -size 1033c     -> File uses 1033 units of space. c refer to bytes. <br/>
+> -size 1033c     -> File uses 1033 units of space. c refer to bytes. 
 
