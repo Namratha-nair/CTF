@@ -15,7 +15,9 @@ ssh
 
 This is a OverTheWire game server. More information on http://www.overthewire.org/wargames
 
-`bandit0@bandit.labs.overthewire.org's password: bandit0`
+```
+bandit0@bandit.labs.overthewire.org's password: bandit0
+```
 
 Linux bandit.otw.local 5.4.8 x86_64 GNU/Linux
 
@@ -102,7 +104,22 @@ irc.overthewire.org.
   irc.overthewire.org #wargames.
 
   Enjoy your stay! <br />
-`bandit0@bandit:~$ ls` <br />
-`readme` <br />
-`bandit0@bandit:~$ cat readme` <br />
-`boJ9jbbUNNfktd78OOpsqOltutMc3MY1`
+
+```
+bandit0@bandit:~$ ls
+``` 
+<br />
+
+```
+readme
+``` 
+<br />
+
+```
+bandit0@bandit:~$ cat readme
+```
+<br />
+
+```
+boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+```
