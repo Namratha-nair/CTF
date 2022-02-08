@@ -107,11 +107,9 @@ irc.overthewire.org.
   
 ```
 bandit4@bandit:~$ ls
-
 inhere
 
 bandit4@bandit:~$ file ./inhere/*
-
 ./inhere/-file00: data
 ./inhere/-file01: data
 ./inhere/-file02: data
@@ -124,6 +122,9 @@ bandit4@bandit:~$ file ./inhere/*
 ./inhere/-file09: data
 
 bandit4@bandit:~$ cat ./inhere/-file07
-
 koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+
+bandit4@bandit:~$ exit
+logout
+Connection to bandit.labs.overthewire.org closed.
 ```
