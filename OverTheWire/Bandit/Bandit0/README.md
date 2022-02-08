@@ -120,8 +120,8 @@ Connection to bandit.labs.overthewire.org closed.
 ```
 #### Command-line help text
 > ls     -> list directory contents <br/>
-> cd     -> change the working directory <br/>                      
+> cd     -> change the working directory <br/>
 > cat    -> concatenate files and print on the standard output <br/>
-> file   -> determine file type <br/>                               
+> file   -> determine file type <br/>
 > du     -> estimate file space usage <br/>
-> find   -> search for files in a directory hierarchy 
+> find   -> search for files in a directory hierarchy
