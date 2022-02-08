@@ -109,13 +109,10 @@ irc.overthewire.org.
 bandit0@bandit:~$ ls
 ``` 
 <br />
-
 readme <br />
-
 ```
 bandit0@bandit:~$ cat readme
 ```
 <br />
-
 boJ9jbbUNNfktd78OOpsqOltutMc3MY1
 
