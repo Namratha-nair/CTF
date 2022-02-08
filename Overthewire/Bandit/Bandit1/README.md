@@ -106,13 +106,12 @@ irc.overthewire.org.
   Enjoy your stay!
 
 ```
-bandit1@bandit:~$ ls
-```
+bandit1@bandit:~$ ls <br \>
 
--
+- <br \>
 
-```
-bandit1@bandit:~$ cat ./-
-```
+bandit1@bandit:~$ cat ./- <br \>
+
 
 CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+```
