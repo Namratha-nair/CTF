@@ -138,8 +138,8 @@ qT1EvQKBgQDKm8ws2ByvSUVs9GjTilCajFqLJ0eVYzRPaY6f++Gv/UVfAPV4c+S0
 kAWpXbv5tbkkzbS0eaLPTKgLzavXtQoTtKwrjpolHKIHUz6Wu+n4abfAIRFubOdN
 /+aLoRQ0yBDRbdXMsZN/jvY44eM+xRLdRVyMmdPtP8belRi2E2aEzA==
 -----END RSA PRIVATE KEY-----
-
-bandit13@bandit:~$ ssh -i sshkey.private bandit14@localhost                                    #to obtain the password, login as username: bandit14, host name: localhost; to pass the private key, use -i parameter
+                                                                          #ssh login format -> ssh <Username>@<Host Name>
+bandit13@bandit:~$ ssh -i sshkey.private bandit14@localhost               #to obtain the password, login as username: bandit14, host name: localhost; to pass the private key, use -i parameter
 Could not create directory '/home/bandit13/.ssh'.
 The authenticity of host 'localhost (127.0.0.1)' can't be established.
 ECDSA key fingerprint is SHA256:98UL0ZWr85496EtCRkKlo20X3OPnyPSB5tB5RPbhczc.
