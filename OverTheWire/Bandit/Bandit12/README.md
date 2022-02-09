@@ -108,7 +108,7 @@ irc.overthewire.org.
   Enjoy your stay!
 
 ```
-bandit12@bandit:~$ ls
+bandit12@bandit:~$ ls                                                #to see the available files in home directory
 data.txt
 
 bandit12@bandit:~$ mkdir /tmp/mybandit12                             #make a directory mybandit12 inside the directory temp
@@ -224,7 +224,7 @@ data9: ASCII text
 bandit12@bandit:/tmp/mybandit12$ cat data9                           #to display the contents of file data9
 The password is 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
 
-bandit12@bandit:/tmp/mybandit12$ cd ~                                #to go to home directory
+bandit12@bandit:/tmp/mybandit12$ cd ~                                #to go to the home directory
 
 bandit12@bandit:~$ rm -rf /tmp/mybandit12                            #to delete the created mybandit12 directory
 
