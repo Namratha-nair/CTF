@@ -192,7 +192,7 @@ Connection to bandit.labs.overthewire.org closed.
 > grep   -> print lines matching a pattern <br/>
 > find   -> search for files in a directory hierarchy <br/>
 
-> For find, the following options are required: <br/>
+> For find, the following arguments are required: <br/>
 > /               -> Refers to the Root Directory. <br/>
 > -user uname     -> File is owned by the user named as uname <br/>
 > -group gname    -> File is owned by the group named as gname <br/>
