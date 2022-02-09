@@ -108,6 +108,7 @@ irc.overthewire.org.
 
   Enjoy your stay!
 ```
+                                                                   #make connection
 bandit15@bandit:~$ openssl s_client -connect localhost:30001       #openssl s_client -connect <hostname>:<port> -> openssl command format to connect to a server supporting TLS
 CONNECTED(00000003)
 depth=0 CN = localhost
@@ -177,7 +178,7 @@ SSL-Session:
     Verify return code: 18 (self signed certificate)
     Extended master secret: yes
 ---
-BfMYroe26WYalil77FoDi9qh59eK5xNr
+BfMYroe26WYalil77FoDi9qh59eK5xNr           #enter the password of current level
 Correct!
 cluFn7wTiGryunymYOu4RcffSxQluehd
 
