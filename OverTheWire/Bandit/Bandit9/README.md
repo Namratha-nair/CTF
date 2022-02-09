@@ -144,4 +144,4 @@ Connection to bandit.labs.overthewire.org closed.
 > grep    -> Print lines matching a pattern <br/>
 > For grep, the following arguments are required: <br/>
 > -E      -> Interpret PATTERN as an extended regular expression <br/>
->  +      -> Matches one or more repetations of the preceding symbol
+>  =+     -> = is the stiring being searched. + is used to match one or more repetations of the preceding symbol(=).
