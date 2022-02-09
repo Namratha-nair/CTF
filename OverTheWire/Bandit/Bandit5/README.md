@@ -155,7 +155,7 @@ Connection to bandit.labs.overthewire.org closed.
 > du     -> estimate file space usage <br/>
 > find   -> search for files in a directory hierarchy <br/>
 
-> For find, the following options are required: <br/>
+> For find, the following arguments are required: <br/>
 > . or ./         -> Refer to the Current Working Directory. <br/>
 > -type f         -> File is of type : regular file   <br/>
 > -readable       -> Matches files which are readable. <br/>
