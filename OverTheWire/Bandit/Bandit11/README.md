@@ -136,17 +136,17 @@ Connection to bandit.labs.overthewire.org closed.
 > |       -> A  pipeline is a sequence of one or more commands separated by one of the control operators | or |&. <br/>
  
 #### Level cracking technique explaination
-> The letters in the data.txt file is rotated by 13 letters. So A will be N, B will be Q and so on. Similarly for the lower-case letters.
->
->ABCDEFGHIJKLM
->|||||||||||||
->NOPQRSTUVWXYZ
-> 
-> With tr command, the letters to be mapped must be provided.
-> i.e, A-Z will be mapped to N-Z along with A-M (A is mapped to N; Z is mapped to M). Upper case: Map from A-Z to N-ZA-M.
-> Similarly, a-z will be mapped to n-z and a-m (a is mapped to n; z is mapped to m). Lower case: Map from a-z to n-za-m.
-> In the expression form, it can be written as
-> tr "A-Za-z" "N-ZA-Mn-za-m"
+> The letters in the data.txt file is rotated by 13 letters. So A will be N, B will be Q and so on. Similarly for the lower-case letters. <br/>
+> <br/>
+>ABCDEFGHIJKLM <br/>
+>||||||||||||| <br/>
+>NOPQRSTUVWXYZ <br/>
+> <br/>
+> With tr command, the letters to be mapped must be provided. <br/>
+> i.e, A-Z will be mapped to N-Z along with A-M (A is mapped to N; Z is mapped to M). Upper case: Map from A-Z to N-ZA-M. <br/>
+> Similarly, a-z will be mapped to n-z and a-m (a is mapped to n; z is mapped to m). Lower case: Map from a-z to n-za-m. <br/>
+> In the expression form, it can be written as <br/>
+> tr "A-Za-z" "N-ZA-Mn-za-m" <br/>
 
 
 
