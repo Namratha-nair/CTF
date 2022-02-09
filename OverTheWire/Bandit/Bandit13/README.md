@@ -239,6 +239,10 @@ bandit14@bandit:~$ cat /etc/bandit_pass/bandit14                                
 bandit14@bandit:~$ exit
 logout
 Connection to localhost closed.
+
+bandit13@bandit:~$ exit
+logout
+Connection to bandit.labs.overthewire.org closed.
 ```
 
 #### Command-line help text
