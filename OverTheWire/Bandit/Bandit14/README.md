@@ -108,7 +108,7 @@ irc.overthewire.org.
 
 ```
 bandit14@bandit:~$ nc localhost 30000           #make connection
-4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e                #enter password
+4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e                #enter the password of current level
 Correct!
 BfMYroe26WYalil77FoDi9qh59eK5xNr
 
