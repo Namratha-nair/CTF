@@ -233,7 +233,7 @@ irc.overthewire.org.
 
   Enjoy your stay!
 ```
-bandit14@bandit:~$ cat /etc/bandit_pass/bandit14
+bandit14@bandit:~$ cat /etc/bandit_pass/bandit14                                     #path is given in the level goal
 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
 
 bandit14@bandit:~$ exit
