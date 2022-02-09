@@ -135,7 +135,7 @@ Connection to bandit.labs.overthewire.org closed.
 > cat     -> concatenate files and print on the standard output <br/>
 > |       -> A  pipeline is a sequence of one or more commands separated by one of the control operators | or |&. <br/>
  
-#### Level cracking technique explaination
+#### Note
 ```
 The letters in the data.txt file is rotated by 13 letters. So A will be N, B will be Q and so on. 
 Similarly for the lower-case letters. 
