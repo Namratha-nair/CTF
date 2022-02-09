@@ -243,13 +243,15 @@ Connection to localhost closed.
 
 #### Command-line help text
 
-> ssh      -> OpenSSH SSH client (remote login program) <br/>
-> ssh login format -> ssh <Username>@<Host Name> <br/>
-> Parameter to use with ssh: <br/>
-> -i       -> Selects a file from which the identity (private key) for public key authentication is read. <br/>
->
-> telnet   -> User interface to the TELNET protocol <br/>
-> nc       -> TCP/IP swiss army knife <br/>
-> openssl  -> OpenSSL command line tool <br/>
-> s_client -> SSL/TLS client program <br/>
-> nmap     -> Network exploration tool and security / port scanner
+```
+ssh              -> OpenSSH SSH client (remote login program)
+ssh login format -> ssh <Username>@<Host Name> 
+Parameter to use with ssh: 
+-i               -> Selects a file from which the identity (private key) for public key authentication is read. 
+
+telnet           -> User interface to the TELNET protocol 
+nc               -> TCP/IP swiss army knife 
+openssl          -> OpenSSL command line tool 
+s_client         -> SSL/TLS client program 
+nmap             -> Network exploration tool and security / port scanner
+```
