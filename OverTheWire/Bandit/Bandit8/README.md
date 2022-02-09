@@ -131,5 +131,7 @@ Connection to bandit.labs.overthewire.org closed.
 > xxd     -> Make a hexdump or do the reverse <br/>
 > cat     -> concatenate files and print on the standard output <br/>
 > |       -> A  pipeline is a sequence of one or more commands separated by one of the control operators | or |&. <br/>
-> uniq    -> Report or omit repeated lines 
-> uniq -u -> only print unique lines
+> 
+> uniq    -> Report or omit repeated lines <br/>
+> For uniq, the following argument is required: <br/>
+> -u       -> only print unique lines
