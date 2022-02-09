@@ -139,7 +139,7 @@ Connection to bandit.labs.overthewire.org closed.
 > The letters in the data.txt file is rotated by 13 letters. So A will be N, B will be Q and so on. Similarly for the lower-case letters. <br/>
 > <br/>
 >ABCDEFGHIJKLM <br/>
->||||||||||||| <br/>
+>|-|-|-|-|-|-|-|-|-|-|-|-| <br/>
 >NOPQRSTUVWXYZ <br/>
 > <br/>
 > With tr command, the letters to be mapped must be provided. <br/>
