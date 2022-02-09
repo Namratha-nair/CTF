@@ -137,16 +137,21 @@ Connection to bandit.labs.overthewire.org closed.
  
 #### Level cracking technique explaination
 ```
-The letters in the data.txt file is rotated by 13 letters. So A will be N, B will be Q and so on. Similarly for the lower-case letters. 
+The letters in the data.txt file is rotated by 13 letters. So A will be N, B will be Q and so on. 
+Similarly for the lower-case letters. 
 
 A B C D E F G H I J K L M 
 | | | | | | | | | | | | | 
 N O P Q R S T U V W X Y Z 
 
-With tr command, the letters to be mapped must be provided. <br/>
-i.e, A-Z will be mapped to N-Z along with A-M (A is mapped to N; Z is mapped to M). Upper case: Map from A-Z to N-ZA-M. 
-Similarly, a-z will be mapped to n-z and a-m (a is mapped to n; z is mapped to m). Lower case: Map from a-z to n-za-m. 
-In the expression form, it can be written as 
+With tr command, the letters to be mapped must be provided. 
+i.e, A-Z will be mapped to N-Z along with A-M (A is mapped to N; Z is mapped to M).
+Upper case: Map from A-Z to N-ZA-M. 
+
+Similarly, a-z will be mapped to n-z and a-m (a is mapped to n; z is mapped to m). 
+Lower case: Map from a-z to n-za-m. 
+
+In the expression form, it can be given as 
 tr "A-Za-z" "N-ZA-Mn-za-m" 
 ```
 
