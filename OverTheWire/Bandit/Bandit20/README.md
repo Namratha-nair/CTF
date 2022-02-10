@@ -9,7 +9,8 @@ NOTE: Try connecting to your own network daemon to see if it works as you think
 ssh, nc, cat, bash, screen, tmux, Unix ‘job control’ (bg, fg, jobs, &, CTRL-Z, …)
 
 ## Solution
-
+Note:
+Not all the commands given above are required.
 ```                                                                                 
 ┌──(kali㉿kali)-[~]
 └─$ ssh -p 2220 bandit20@bandit.labs.overthewire.org 
