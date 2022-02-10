@@ -7,7 +7,8 @@ The password for the next level can be retrieved by submitting the password of t
 ssh, telnet, nc, openssl, s_client, nmap
 
 ## Solution
-
+Note:
+Not all the commands given above are required.
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh -p 2220 bandit14@bandit.labs.overthewire.org     
