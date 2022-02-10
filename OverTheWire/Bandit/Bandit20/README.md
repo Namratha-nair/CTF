@@ -145,9 +145,10 @@ Connect both netcat and suconnect to the port 1111. <br/>
 
 ```
 #Terminal1                                                    | #Terminal2
+                                                              |
 bandit20@bandit:~$ nc -lp 1111                                | bandit20@bandit:~$ ./suconnect 1111
-GbKksEFF4yrVs6il55v6gwY5aVje5f0j                              | Read: GbKksEFF4yrVs6il55v6gwY5aVje5f0j
-gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr                              | Password matches, sending next password
+GbKksEFF4yrVs6il55v6gwY5aVje5f0j   #current level password    | Read: GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr   #next level password       | Password matches, sending next password
                                                               |
 bandit20@bandit:~$ exit                                       | bandit20@bandit:~$ exit
 logout                                                        | logout
