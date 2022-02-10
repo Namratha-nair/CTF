@@ -7,7 +7,8 @@ The password for the next level is stored in the file data.txt, which is a hexdu
 grep, sort, uniq, strings, base64, tr, tar, gzip, bzip2, xxd, mkdir, cp, mv, file
 
 ## Solution
-
+Note:
+Not all the commands given above is required.
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh -p 2220 bandit12@bandit.labs.overthewire.org
