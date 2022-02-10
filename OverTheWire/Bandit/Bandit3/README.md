@@ -6,6 +6,9 @@ The password for the next level is stored in a hidden file in the inhere directo
 ## Commands you may need to solve this level
 ls, cd, cat, file, du, find
 
+## Solution
+Note:
+Not all the commands given above are required.
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh -p 2220 bandit3@bandit.labs.overthewire.org 
