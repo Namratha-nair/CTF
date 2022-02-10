@@ -7,7 +7,8 @@ The password for the next level is stored in /etc/bandit_pass/bandit14 and can o
 ssh, telnet, nc, openssl, s_client, nmap
 
 ## Solution
- 
+Note:
+Not all the commands given above is required. 
 ``` 
 ┌──(kali㉿kali)-[~]
 └─$ ssh -p 2220 bandit13@bandit.labs.overthewire.org
