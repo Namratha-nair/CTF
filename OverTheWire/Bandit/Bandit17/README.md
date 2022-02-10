@@ -9,7 +9,8 @@ NOTE: if you have solved this level and see ‘Byebye!’ when trying to log int
 cat, grep, ls, diff
 
 ## Solution
-
+Note:
+Not all the commands given above are required.
 ```                                                                                                                                                           
 ┌──(kali㉿kali)-[~]
 └─$ ssh -p 2220 bandit17@bandit.labs.overthewire.org
