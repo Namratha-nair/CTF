@@ -7,7 +7,8 @@ The password for the next level is stored in a file called - located in the home
 ls, cd, cat, file, du, find
 
 ## Solution
-
+Note:
+Not all the commands given above is required.
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh -p 2220 bandit1@bandit.labs.overthewire.org   
