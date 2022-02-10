@@ -133,7 +133,7 @@ echo "Copying passwordfile /etc/bandit_pass/$myname to /tmp/$mytarget"
 cat /etc/bandit_pass/$myname > /tmp/$mytarget                            #the password is in the file /tmp/$mytarget
 
 
-bandit22@bandit:~$ cat /tmp/$(echo I am user bandit23 | md5sum | cut -d ' ' -f 1)     #read the file in the path /tmp/$mytarget by putting the value of mytarget as shown in the previous comment
+bandit22@bandit:~$ cat /tmp/$(echo I am user bandit23 | md5sum | cut -d ' ' -f 1)     #read the file in the path /tmp/$mytarget by substituting the value of mytarget as shown in the previous comment
 jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
 
 bandit22@bandit:~$ exit
@@ -142,6 +142,57 @@ Connection to bandit.labs.overthewire.org closed.
                                                    
 
 ```
+#### Script explanation
+```
+The script seen in this level is as below:
+
+mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)
+
+|       -> used in combining the 3 shell commands, to be executed in succession
+$       -> to access the value stored in a variable
+$myname = bandit23
+
+md5sum  -> computes and checks 128-bit MD5 message digest or hashes
+        -> used to verify that a file has not changed as a result of a faulty file transfer
+
+
+Consider:
+echo I am user $myname | md5sum
+
+MD5 checksum is computed for the input string "I am user bandit23" and the output is 128–bit cryptographic hash.
+
+bandit22@bandit:~$ echo I am user bandit23 | md5sum
+8ca319486bfbbc3663ea0fbe81326349  -
+
+Since the md5sum command returns a dash after the hash, to extract just the MD5 hash without the dash, cut command is used.
+
+Cut command :
+SYNTAX: cut -d -f filename.txt
+Cut     -> Print selected parts of lines from each file to standard output.
+-d      -> delimiter
+-f      -> field
+
+Here, in
+8ca319486bfbbc3663ea0fbe81326349  -
+the hash is field 1 and dash is field 2, seperated by delimiter space ' '.
+
+So the command
+cut -d ' ' -f 1
+selects and displays only the 1st field of the line using the field delimiter: space ' '.
+In this case, it  refers to 8ca319486bfbbc3663ea0fbe81326349.
+
+
+Putting it all together, the command :
+echo I am user bandit23 | md5sum | cut -d ‘ ‘ -f 1
+will eventually return the MD5 hash: 8ca319486bfbbc3663ea0fbe81326349.
+
+This output is then assigned to the variable mytarget via Command Substitution. This is the name of file in tmp directory.
+
+
+Finally, cat /etc/bandit_pass/$myname > /tmp/$mytarget will redirects the bandit23‘s password to the 8ca319486bfbbc3663ea0fbe81326349 file, located in tmp. Here, $mytarget will access the value stored in variable mytarget and become the name of the file located in tmp directory.
+    
+```
+
 
 #### Command-line help text
 ```
