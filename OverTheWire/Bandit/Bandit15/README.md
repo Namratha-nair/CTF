@@ -11,7 +11,8 @@ Use -ign_eof and read the “CONNECTED COMMANDS” section in the manpage. Next 
 ssh, telnet, nc, openssl, s_client, nmap
 
 ## Solution
-
+Note:
+Not all the commands given above are required.
 ```                                                                                                                                                            
 ┌──(kali㉿kali)-[~]
 └─$ ssh -p 2220 bandit15@bandit.labs.overthewire.org
