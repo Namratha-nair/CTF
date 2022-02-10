@@ -184,6 +184,7 @@ Correct!
 cluFn7wTiGryunymYOu4RcffSxQluehd
 
 closed
+
 bandit15@bandit:~$ exit
 logout
 Connection to bandit.labs.overthewire.org closed.
