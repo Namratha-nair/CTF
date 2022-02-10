@@ -136,6 +136,11 @@ cat /etc/bandit_pass/$myname > /tmp/$mytarget                            #the pa
 bandit22@bandit:~$ cat /tmp/$(echo I am user bandit23 | md5sum | cut -d ' ' -f 1)     #read the file in the path /tmp/$mytarget by putting the value of mytarget as shown in the previous comment
 jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
 
+bandit22@bandit:~$ exit
+logout
+Connection to bandit.labs.overthewire.org closed.
+                                                   
+
 ```
 
 #### Command-line help text
