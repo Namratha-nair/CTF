@@ -225,7 +225,7 @@ Failed to add the host to the list of known hosts (/home/bandit16/.ssh/known_hos
 This is a OverTheWire game server. More information on http://www.overthewire.org/wargames
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @                                     #this file is readable to anyone and hence there's a warning                                                
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @                                     #sshkey.private file is readable to anyone and hence there's a warning                                                
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 Permissions 0644 for 'sshkey.private' are too open.
 It is required that your private key files are NOT accessible by others.
@@ -369,9 +369,9 @@ nmap command format   -> nmap -p <port ranges> <target specification>
 #### vim text editor
 ```
  vim            -> Open vim
- vim <fileName> -> Open file using vim
+ vim <fileName> -> Open file using vim or create and open the file with vim
  i              -> Switch to insert mode & Enter some text
- Esc            ->Switch back to command mode
+ Esc            -> Switch back to command mode
  :w             -> Save changes to file
  :q             -> Quit Vim
 ```
