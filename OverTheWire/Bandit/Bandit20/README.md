@@ -157,7 +157,7 @@ Connection to bandit.labs.overthewire.org closed.             | Connection to ba
 ```
 
 #### Command-line help text
-``
+```
 ssh              -> OpenSSH SSH client (remote login program)
 cat              -> Concatenate files & print on the stdout
 bash             -> GNU Bourne-Again Shell
@@ -166,6 +166,6 @@ tmux             -> Terminal multiplexer
 Unix job control -> Unix job control command list
 
 nc               -> netcat; TCP/IP swiss army knife
--l               -> To specify that nc should listen for an incoming connection rather than initiate a connection to a remote host.            │
--p <Port Number> -> Specifies the Port Number nc should use. 
+-l               -> To specify that nc should listen for an incoming connection rather than initiate a connection to a remote host.
+-p <Port Number> -> Specifies the Port Number nc should use.
 ```
