@@ -233,7 +233,7 @@ This private key will be ignored.
 Load key "sshkey.private": bad permissions
 bandit17@localhost's password: 
 
-bandit16@bandit:/tmp/mybandit16$ chmod 400 sshkey.private                                        #provide read and write access to only the owner
+bandit16@bandit:/tmp/mybandit16$ chmod 400 sshkey.private                                        #provide read access to only the owner
 
 bandit16@bandit:/tmp/mybandit16$ ssh -i sshkey.private bandit17@localhost
 Could not create directory '/home/bandit16/.ssh'.
@@ -364,6 +364,10 @@ nmap                  -> Network exploration tool and security / port scanner
 nmap command format   -> nmap -p <port ranges> <target specification>
 -p <port ranges>      -> Only scan specified ports 
 -quiet                -> causes a command to run silently and not generate any output. Instead, it runs the command and returns an exit status based on success or failure.
+
+
+chmod                 -> change file mode bits
+400                   -> read access to the owner/user
 ```
 
 #### vim text editor
