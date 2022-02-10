@@ -135,7 +135,7 @@ Nmap done: 1 IP address (1 host up) scanned in 0.09 seconds
 
 
 ### Note: 
-Use a port that is not in session. The ports obtained from nmap are currently in use. So use any port other than that listed by nmap. 
+Use a port that is not in session. The ports obtained from nmap are currently in use. So use any port other than that listed by nmap. <br/> 
 I consider port number 1111 (a random port that is not in use). 
 Now netcat is used to transmit and listen to the password. When the current level password is transmitted, the next level password will be received.
 Consider the current terminal as terminal1 and open another terminal - terminal2. In the terminal2, log in to bandit20 as done with terminal1.
