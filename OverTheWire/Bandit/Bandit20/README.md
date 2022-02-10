@@ -11,7 +11,7 @@ ssh, nc, cat, bash, screen, tmux, Unix ‘job control’ (bg, fg, jobs, &, CTRL-
 ## Solution
 Note: <br/>
 Not all the commands given above are required. <br/>
-Here own network daemon is the localhost.
+Here, own network daemon is the localhost.
 ```                                                                                 
 ┌──(kali㉿kali)-[~]
 └─$ ssh -p 2220 bandit20@bandit.labs.overthewire.org 
