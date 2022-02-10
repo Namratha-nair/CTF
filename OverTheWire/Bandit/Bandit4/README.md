@@ -7,7 +7,8 @@ The password for the next level is stored in the only human-readable file in the
 ls, cd, cat, file, du, find
 
 ## Solution
-
+Note:
+Not all the commands given above are required.
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh -p 2220 bandit4@bandit.labs.overthewire.org
