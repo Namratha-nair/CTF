@@ -11,7 +11,8 @@ not executable
 ls, cd, cat, file, du, find
 
 ## Solution
-
+Note:
+Not all the commands given above are required.
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh -p 2220 bandit5@bandit.labs.overthewire.org
