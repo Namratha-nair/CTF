@@ -104,8 +104,8 @@ irc.overthewire.org.
   Enjoy your stay!
 
 ```
-bandit24@bandit:~$ nmap -p- localhost                             #to check if localhost is listening
-
+bandit24@bandit:~$ nmap -p- localhost                             #to check if localhost is listening at 30002
+                                                                  #you can specify -p- to scan ports from 1 through 65535
 Starting Nmap 7.40 ( https://nmap.org ) at 2022-02-11 10:11 CET
 Nmap scan report for localhost (127.0.0.1)
 Host is up (0.00026s latency).
@@ -116,7 +116,7 @@ PORT      STATE SERVICE
 1234/tcp  open  hotline
 30000/tcp open  ndmps
 30001/tcp open  pago-services1
-30002/tcp open  pago-services2
+30002/tcp open  pago-services2                                    #the localhost is listening at 30002
 31046/tcp open  unknown
 31518/tcp open  unknown
 31691/tcp open  unknown
@@ -137,9 +137,9 @@ bandit24@bandit:/tmp/dirbandit24$ vim basefile.sh                    #create and
                                                                      #type the below script in it
                                                                      #!/bin/bash
                                                                      #for i in {0000..9999};
-                                                                          do
-                                                                              echo "UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ" $i >> combinations.txt
-                                                                          done
+                                                                     #    do
+                                                                     #        echo "UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ" $i >> combinations.txt
+                                                                     #    done
     
                                                                      #press Esc to get into command mode
                                                                      #run :wq to save and close the vim
@@ -150,7 +150,7 @@ bandit24@bandit:/tmp/dirbandit24$ cat basefile.sh                    #read the c
 
 for i in {0000..9999};                                                        #generate 0000 to 9999, each digit in each iteration                                                                     
     do
-        echo "UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ" $i >> combinations.txt        #append the generated passcode with bandit24 password and redirect it to the file combinations.txt
+        echo "UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ" $i >> combinations.txt        #append the generated passcode with bandit24 password and redirect it to the file combinations.txt in each iteration
     done
     
 bandit24@bandit:/tmp/dirbandit24$ chmod +x basefile.sh                 #provide execute permission for basefile.sh
