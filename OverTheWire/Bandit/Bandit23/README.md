@@ -177,7 +177,7 @@ bandit23@bandit:~$ mkdir /tmp/mybandit23               #create a directory myban
 bandit23@bandit:~$ chmod 777 /tmp/mybandit23           #provide read, write, execute access for user, group and others for this directory
 bandit23@bandit:~$ cd /tmp/mybandit23                  #navigate to mybandit23
 bandit23@bandit:/tmp/mybandit23$ vim pass.sh           #create a file pass.sh at this path using vim
-                                                       #the above command opens pass.sh file
+                                                       #the above command opens pass.sh file using vim
                                                        #press i for insert mode in vim
                                                        #type the below script to redirect the password into bandit24pass file
                                                        #!/bin/bash
