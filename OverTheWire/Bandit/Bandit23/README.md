@@ -14,7 +14,7 @@ cron, crontab, crontab(5) (use “man 5 crontab” to access this)
 Note:<br/>
 Not all the commands given above are required.<br/>
 <br/>
-Cron is a time — based job scheduler in Unix or Unix-like computer operating systems. It schedules a command or script on your server to run automatically in the background, at a designated time and date.<br/>
+Cron is a time - based job scheduler in Unix or Unix-like computer operating systems. It schedules a command or script on your server to run automatically in the background, at a designated time and date.<br/>
 
 ```
                                                                                                                                                             
@@ -120,7 +120,7 @@ cronjob_bandit15_root  cronjob_bandit17_root  cronjob_bandit22  cronjob_bandit23
 bandit23@bandit:~$ cat /etc/cron.d/cronjob_bandit24                      #since we want the password of bandit24, lets read cronjob_bandit24 file
 @reboot bandit24 /usr/bin/cronjob_bandit24.sh &> /dev/null               #@reboot -> run once after reboot
 * * * * * bandit24 /usr/bin/cronjob_bandit24.sh &> /dev/null             # * * * * * -> run at every minute
-                                                                         # the user bandit23 will run the command: /usr/bin/cronjob_bandit24.sh &> /dev/null
+                                                                         # the user bandit24 will run the command: /usr/bin/cronjob_bandit24.sh &> /dev/null
 
 bandit23@bandit:~$ cat /usr/bin/cronjob_bandit24.sh                      #read the content of the file /usr/bin/cronjob_bandit24.sh
 #!/bin/bash
