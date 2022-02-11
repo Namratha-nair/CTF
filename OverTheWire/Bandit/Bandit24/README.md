@@ -104,7 +104,7 @@ irc.overthewire.org.
   Enjoy your stay!
 
 ```
-bandit24@bandit:~$ nmap -p- localhost
+bandit24@bandit:~$ nmap -p- localhost                             #to check if localhost is listening
 
 Starting Nmap 7.40 ( https://nmap.org ) at 2022-02-11 10:11 CET
 Nmap scan report for localhost (127.0.0.1)
@@ -124,44 +124,69 @@ PORT      STATE SERVICE
 31960/tcp open  unknown
 
 Nmap done: 1 IP address (1 host up) scanned in 3.53 seconds
+```
+### Note1: In the challenge it is told that along with the password for bandit24, a 4 digit passcode (obtained using brute-force) should be produced to the localhost through port 30002. So write a script to append the 4 digit passcode with the bandit24 password. This script is written in the file basefile.sh and the final password appended with passcode is redirected to the file combinations.txt.
 
-bandit24@bandit:~$ mkdir /tmp/dirbandit24
+```
+bandit24@bandit:~$ mkdir /tmp/dirbandit24                            #create a directory dirbandit24 under temp
 
-bandit24@bandit:~$ cd /tmp/dirbandit24
+bandit24@bandit:~$ cd /tmp/dirbandit24                               #navigate to dirbandit24
 
-bandit24@bandit:/tmp/dirbandit24$ vim basefile.sh
+bandit24@bandit:/tmp/dirbandit24$ vim basefile.sh                    #create and open a file named basefile.sh using vim
+                                                                     #press i for insert mode in vim
+                                                                     #type the below script in it
+                                                                     #!/bin/bash
+                                                                     #for i in {0000..9999};
+                                                                          do
+                                                                              echo "UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ" $i >> combinations.txt
+                                                                          done
+    
+                                                                     #press Esc to get into command mode
+                                                                     #run :wq to save and close the vim
 
-bandit24@bandit:/tmp/dirbandit24$ cat basefile.sh
+
+bandit24@bandit:/tmp/dirbandit24$ cat basefile.sh                    #read the created file to verify its contents 
 #!/bin/bash
 
-for i in {0000..9999};
+for i in {0000..9999};                                                        #generate 0000 to 9999, each digit in each iteration                                                                     
     do
-        echo "UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ" $i >> combinations.txt
+        echo "UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ" $i >> combinations.txt        #append the generated passcode with bandit24 password and redirect it to the file combinations.txt
     done
     
-bandit24@bandit:/tmp/dirbandit24$ chmod +x basefile.sh
+bandit24@bandit:/tmp/dirbandit24$ chmod +x basefile.sh                 #provide execute permission for basefile.sh
 
-bandit24@bandit:/tmp/dirbandit24$ ./basefile.sh
+bandit24@bandit:/tmp/dirbandit24$ ./basefile.sh                        #execute the file basefile.sh
 
-bandit24@bandit:/tmp/dirbandit24$ head -n 4 combinations.txt
+bandit24@bandit:/tmp/dirbandit24$ head -n 5 combinations.txt           #to see the first 5 entries of combinations.txt
 UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ 0000
 UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ 0001
 UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ 0002
 UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ 0003
+UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ 0004
+```
+### Note2: Send the contents of the file to localhost at port 30002, which inturn will produce the password to the next level when the correct passcode is received. this output is redirected to result.txt file.
+```
+bandit24@bandit:/tmp/dirbandit24$ cat combinations.txt | nc localhost 30002 >> result.txt   
 
-bandit24@bandit:/tmp/dirbandit24$ cat combinations.txt | nc localhost 30002 >> result.txt
-
-bandit24@bandit:/tmp/dirbandit24$ sort result.txt | uniq -u
+bandit24@bandit:/tmp/dirbandit24$ sort result.txt | uniq -u            #since there is only one passcode that can provide the password, sort and find the unique output
 
 Correct!
 Exiting.
 I am the pincode checker for user bandit25. Please enter the password for user bandit24 and the secret pincode on a single line, separated by a space.
 The password of user bandit25 is uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
 
-bandit24@bandit:/tmp/dirbandit24$ rm -rf /tmp/dirbandit24
+bandit24@bandit:/tmp/dirbandit24$ rm -rf /tmp/dirbandit24              #delete the created directory
 
-bandit24@bandit:/tmp/dirbandit24$ exit
+bandit24@bandit:/tmp/dirbandit24$ exit                                 #logout of bandit.labs.overthewire.org
 logout
 Connection to bandit.labs.overthewire.org closed.
 ```                  
-
+#### vim text editor
+```
+vim            -> Open vim
+vim <fileName> -> Open file using vim or create and open the file with vim
+i              -> Switch to insert mode & Enter some text
+Esc            -> Switch back to command mode
+:w             -> Save changes to file
+:q             -> Quit Vim
+```
