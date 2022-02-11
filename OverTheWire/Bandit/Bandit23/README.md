@@ -205,9 +205,19 @@ bandit23@bandit:/tmp/mybandit23$ exit                               #exit from b
 logout
 Connection to bandit.labs.overthewire.org closed.
 ```
-###Command-line help text
+#### Command-line help text
 ```
 cron       -> Daemon to execute scheduled commands
 crontab    -> Maintain crontab files for individual users
 crontab(5) -> File formats
+```
+
+#### vim text editor
+```
+vim            -> Open vim
+vim <fileName> -> Open file using vim or create and open the file with vim
+i              -> Switch to insert mode & Enter some text
+Esc            -> Switch back to command mode
+:w             -> Save changes to file
+:q             -> Quit Vim
 ```
