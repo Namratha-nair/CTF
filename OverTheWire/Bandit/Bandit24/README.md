@@ -164,7 +164,7 @@ UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ 0002
 UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ 0003
 UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ 0004
 ```
-### Note2: Send the contents of the file to localhost at port 30002, which inturn will produce the password to the next level when the correct passcode is received. this output is redirected to result.txt file.
+### Note2: Send the contents of the file to localhost at port 30002, which inturn will produce the password to the next level when the correct passcode is received. This output is redirected to result.txt file.
 ```
 bandit24@bandit:/tmp/dirbandit24$ cat combinations.txt | nc localhost 30002 >> result.txt   
 
