@@ -157,7 +157,7 @@ Consider
 for i in * .*; 
 for i in *  -> iterate all regular files located in the current working directory
 for i in .* -> iterate all hidden files located in the current directory
-Hence, for i in * .* will itereate both regular and hidden files
+Hence, "for i in * .*" will itereate both regular and hidden files
 
 Inside the for loop, each file undergoes the
 if [ “$i” != “.” -a “$i” != “..” ]; conditional statements to check if 
