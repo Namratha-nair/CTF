@@ -185,7 +185,7 @@ bandit23@bandit:/tmp/mybandit23$ vim pass.sh           #create a file pass.sh at
                                                        #press Esc to get into command mode
                                                        #run :wq to save and close the vim
 
-bandit23@bandit:/tmp/mybandit23$ cat pass.sh           #when the vim is closed read the pass.sh file to check for its cotents
+bandit23@bandit:/tmp/mybandit23$ cat pass.sh           #when the vim is closed, read the pass.sh file to check for its contents
 #!/bin/bash                                                         #the entered script is present
 cat /etc/bandit_pass/bandit24 > /tmp/mybandit23/bandit24pass        #the entered script is present
 
