@@ -151,7 +151,7 @@ Since the cronjob is run by bandit24 user, the $(whoami) will be bandit24.
 
 cd /var/spool/$myname will navigate to cd /var/spool/bandit24 directory 
 
-echo "Executing and deleting all scripts in /var/spool/$myname:" -> Executes and deletes all scripts in 60 seconds(cronjob)
+echo "Executing and deleting all scripts in /var/spool/$myname:" -> A message that says that all scripts will be executed and deleted in 60 seconds(cronjob)
 
 Consider
 for i in * .*; 
