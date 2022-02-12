@@ -125,7 +125,7 @@ remote: Total 9 (delta 2), reused 0 (delta 0)
 Receiving objects: 100% (9/9), done.
 Resolving deltas: 100% (2/2), done. 
 
-bandit28@bandit:/tmp/mybandit28$ ls                                                               #view the contents of bandit28 directory
+bandit28@bandit:/tmp/mybandit28$ ls                                                               #view the contents of mybandit28 directory
 repo                                                                                              #a directory named repo is present
 
 bandit28@bandit:/tmp/mybandit28$ cd repo                                                          #navigate to repo
@@ -181,7 +181,7 @@ index 3f7cee8..5c6457b 100644
 -- password: bbc96594b4e001778eee9975372716b2                                                      #bandit29 password
 +- password: xxxxxxxxxx
 
-bandit28@bandit:/tmp/mybandit28/repo$ rm -rf /tmp/bandit28                                         #delete the created bandit28 directory
+bandit28@bandit:/tmp/mybandit28/repo$ rm -rf /tmp/bandit28                                         #delete the created mybandit28 directory
 
 bandit28@bandit:/tmp/mybandit28/repo$ exit                                                         #logout from bandit.labs.overthewire.org
 logout
