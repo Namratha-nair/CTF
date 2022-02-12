@@ -246,6 +246,7 @@ Are you sure you want to continue connecting (yes/no)? yes
 5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z                                              #password obtained in vim editor
 
 ```
+### Note for next level: Don't exit from the vim editor
 
 #### Command-line help text
 
