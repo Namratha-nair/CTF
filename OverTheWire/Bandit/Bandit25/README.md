@@ -246,7 +246,7 @@ Are you sure you want to continue connecting (yes/no)? yes
 5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z                                              #password obtained in vim editor
 
 ```
-### Note for next level: Don't exit from the vim editor
+### Note for the next level: Don't exit from the vim editor
 
 #### Command-line help text
 
@@ -258,4 +258,9 @@ vi      -> Screen-oriented (visual) display editor
 ls      -> List directory contents
 id      -> Print real and effective user and group IDs
 pwd     -> Print name of current/working directory
+```
+
+#### vim text editor
+```
+:e      -> to edit a different file, use the :e filename command
 ```
