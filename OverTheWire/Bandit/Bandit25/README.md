@@ -251,11 +251,11 @@ Are you sure you want to continue connecting (yes/no)? yes
 #### Command-line help text
 
 ```
-ssh     │ OpenSSH SSH client (remote login program)
-cat     │ Concatenate files and print on the standard output
-more    │ File perusal filter for crt viewing
-vi      │ Screen-oriented (visual) display editor
-ls      │ List directory contents
-id      │ Print real and effective user and group IDs
-pwd     │ Print name of current/working directory
+ssh     -> OpenSSH SSH client (remote login program)
+cat     -> Concatenate files and print on the standard output
+more    -> File perusal filter for crt viewing
+vi      -> Screen-oriented (visual) display editor
+ls      -> List directory contents
+id      -> Print real and effective user and group IDs
+pwd     -> Print name of current/working directory
 ```
