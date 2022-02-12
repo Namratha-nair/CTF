@@ -133,7 +133,7 @@ bandit28@bandit:/tmp/mybandit28$ cd repo                                        
 bandit28@bandit:/tmp/mybandit28/repo$ ls                                                          #list the contents of repo
 README.md                                                                                         #a file named README.md is present
 
-bandit28@bandit:/tmp/mybandit28/repo$ cat README.md                                               #read te file README.md
+bandit28@bandit:/tmp/mybandit28/repo$ cat README.md                                               #read the file README.md
 # Bandit Notes
 Some notes for level29 of bandit.
 
