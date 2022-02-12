@@ -10,8 +10,7 @@ git
 
 ## Solution
 Clone the repository means to create a copy of the repository.
-```
-                                                                                 
+```                                                                               
 ┌──(kali㉿kali)-[~]
 └─$ ssh -p 2220 bandit28@bandit.labs.overthewire.org
 ```
