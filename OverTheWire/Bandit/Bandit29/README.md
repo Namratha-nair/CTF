@@ -176,10 +176,10 @@ Connection to bandit.labs.overthewire.org closed.
 ```
 #### Command-line help text
 ```
-git       -> A version control system to keep track of changes to files and projects over time 
-git clone -> Clone a repository into a new directory
-git log   -> Show commit logs
-git show  -> Show various types of objects
-ls        -> List directory contents
-cat       -> Concatenate files and print on the standard output 
+git           -> A version control system to keep track of changes to files and projects over time 
+git clone     -> Clone a repository into a new directory
+git branch    -> List, create, or delete branches
+git checkout  -> Checkout a branch or paths to the working tree
+ls            -> List directory contents
+cat           -> Concatenate files and print on the standard output 
 ```
