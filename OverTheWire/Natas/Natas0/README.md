@@ -4,7 +4,7 @@ Username: natas0 <br/>
 Password: natas0 <br/>
 URL:      http://natas0.natas.labs.overthewire.org <br/>
 
-# Solution
+## Solution
 
 1. Login to the above-mentioned URL
 2. Enter the above mentioned Username and Password
