@@ -151,4 +151,5 @@ ls      -> list directory contents
 
 cat     -> concatenate files and print on the standard output
 ltrace  -> A library call tracer
+file    -> determine file type
 ```
