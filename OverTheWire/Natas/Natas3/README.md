@@ -14,7 +14,7 @@ URL:      http://natas3.natas.labs.overthewire.org <br/>
 7. We can see that 's3cr3t' has been disallowed.
 8. To view 's3cr3t', go to the URL http://natas3.natas.labs.overthewire.org/s3cr3t/
 9. You can view 'Index of /s3cr3t' page.
-10. click on users.txt
+10. Click on users.txt
 11. The password can be seen there as shown below:
 ```
 natas4:Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ
