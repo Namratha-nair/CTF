@@ -2,7 +2,12 @@
 
 There is no information for this level, intentionally.
 
-## Solution  
+## Solution
+It is given in the leviathan home page that it can be accessed at leviathan.labs.overthewire.org through SSH on port 2223.
+
+To login to the first level use:<br/>
+Username: leviathan0 <br/>
+Password: leviathan0
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh -p 2223 leviathan0@leviathan.labs.overthewire.org
@@ -96,7 +101,7 @@ irc.overthewire.org.
   irc.overthewire.org #wargames.
 
   Enjoy your stay!
-```
+```                                                                            #to get the password for leviathan1
 leviathan0@leviathan:~$ ls -al                                                 #list the contents of leviathan0 homedirectory
 total 24
 drwxr-xr-x  3 root       root       4096 Aug 26  2019 .
