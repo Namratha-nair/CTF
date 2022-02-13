@@ -111,6 +111,8 @@ leviathan7@leviathan:~$ exit                                                 #lo
 logout
 Connection to leviathan.labs.overthewire.org closed.
 ```              
+### Note: This is the end of Leviathan series
+
 
 #### Command-line help text
 ```
