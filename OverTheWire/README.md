@@ -5,12 +5,14 @@ To find out more about a certain wargame, just visit its page linked from the me
 If you have a problem, a question or a suggestion, you can join us via chat.
 
 Suggested order to play the games in
-Bandit
-Leviathan or Natas or Krypton
-Narnia
-Behemoth
-Utumno
-Maze
-…
+
+1. Bandit
+2. Leviathan or Natas or Krypton
+3. Narnia
+4. Behemoth
+5. Utumno
+6. Maze
+7. …
+
 Each shell game has its own SSH port
 Information about how to connect to each game using SSH, is provided in the top left corner of the page. Keep in mind that every game uses a different SSH port.
