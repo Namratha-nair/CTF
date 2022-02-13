@@ -112,7 +112,7 @@ leviathan0@leviathan:~/.backup$ ls                                             #
 bookmarks.html                                                                 #there is  a html file named as bookmarks
                                                                                #this file has a huge amount of data
                                                                                
-leviathan0@leviathan:~/.backup$ cat bookmarks.html | grep leviathan1           #to get the data related to leviathan1, use grep command
+leviathan0@leviathan:~/.backup$ cat bookmarks.html | grep leviathan1           #so to get the data related to leviathan1, use grep command
 <DT><A HREF="http://leviathan.labs.overthewire.org/passwordus.html | This will be fixed later, the password for leviathan1 is rioGegei8m" ADD_DATE="1155384634" LAST_CHARSET="ISO-8859-1" ID="rdf:#$2wIU71">password to leviathan1</A>
 
 leviathan0@leviathan:~/.backup$ exit                                           #to log out of leviathan.labs.overthewire.org 
