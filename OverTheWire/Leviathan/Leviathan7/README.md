@@ -1,4 +1,4 @@
-# Leviathan Level 6   
+# Leviathan Level 7   
 
 ## Solution
 ```
