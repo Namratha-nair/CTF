@@ -153,11 +153,14 @@ Connection to leviathan.labs.overthewire.org closed.
 
 #### Command-line help text
 ```
-mkdir-  > make directories
+mkdir  -> make directories
 cd     -> change the working directory
 cat    -> concatenate files and print on the standard output
 whoami -> print effective userid
 
+ls      -> list directory contents
+-a      -> do not ignore entries starting with .
+-l      -> use a long listing format
 
 chmod  -> change file mode bits
 +x     -> execute mode
