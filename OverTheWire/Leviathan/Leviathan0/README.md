@@ -3,7 +3,7 @@
 There is no information for this level, intentionally.
 
 ## Solution
-It is given in the leviathan home page that it can be accessed at leviathan.labs.overthewire.org through SSH on port 2223.
+It is given in the leviathan home page that the levels can be accessed at leviathan.labs.overthewire.org through SSH on port 2223.
 
 To login to the first level use:<br/>
 Username: leviathan0 <br/>
